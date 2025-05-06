@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam Detector</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #e0f7ff; /* light sky blue background */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            color: #007acc; /* sky blue text */
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        form {
+            background: #ffffff; /* white background */
+            padding: 25px;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0, 122, 204, 0.2); /* soft sky blue shadow */
+            width: 90%;
+            max-width: 500px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 12px;
+            font-size: 1rem;
+            border: 1px solid #b3e0f2;
+            border-radius: 10px;
+            background-color: #f9fdff; /* light white */
+            margin-bottom: 20px;
+        }
+
+        input[type="submit"] {
+            background-color: #00aaff;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1rem;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #007acc;
+        }
+
+        h3 {
+            margin-top: 20px;
+            color: #003f5c;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            textarea {
+                font-size: 0.95rem;
+            }
+
+            input[type="submit"] {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Email Spam Classifier</h1>
+    <form method="POST" action="/predict">
+        <textarea name="email" rows="5" placeholder="Paste email here...">{{ email }}</textarea>
+        <br>
+        <input type="submit" value="Check">
+    </form>
+    {% if prediction %}
+        <h3>Result: {{ prediction }}</h3>
+    {% endif %}
+</body>
+</html>
