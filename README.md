@@ -44,6 +44,10 @@ python src/app.py
 ```
 Visit [http://localhost:5000](http://localhost:5000) in your browser.
 
+![image alt](https://github.com/adi-2023/spam-detection/blob/ae01ed1926bd8d727bc7ab42099e9b51b8eb401c/2.png)
+
+![image alt](https://github.com/adi-2023/spam-detection/blob/ae01ed1926bd8d727bc7ab42099e9b51b8eb401c/3.png)
+
 ## 🧠 How It Works
 1. Messages are cleaned (lowercase, remove special chars)
 2. NLTK tokenizes and stems words
