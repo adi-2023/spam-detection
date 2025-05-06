@@ -44,10 +44,10 @@ python src/app.py
 ```
 Visit [http://localhost:5000](http://localhost:5000) in your browser.
 
-Spam Email Example
+### Spam Email Example
 ![image alt](https://github.com/adi-2023/spam-detection/blob/ae01ed1926bd8d727bc7ab42099e9b51b8eb401c/3.png)
 
-Ham (Legitimate) Email Example
+### Ham (Legitimate) Email Example
 ![image alt](https://github.com/adi-2023/spam-detection/blob/ae01ed1926bd8d727bc7ab42099e9b51b8eb401c/2.png)
 
 ## 🧠 How It Works
