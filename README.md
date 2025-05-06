@@ -2,6 +2,7 @@
 
 A machine learning solution that classifies emails as **Spam** or **Ham** using Naive Bayes classifier, served via Flask web interface.
 
+![image alt](https://github.com/adi-2023/spam-detection/blob/ac337fd4f372ace09991a1b7823a3af1754f65ee/1.png)
 ## Features
 - NLP preprocessing with NLTK
 - TF-IDF vectorization
